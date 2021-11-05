@@ -7,6 +7,19 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">    <link rel="stylesheet" href="style.css">
 
     <title>Influential Fashion Designers</title>
+    <script>
+      function newsletter(){
+        email=document.getElementById("newsletterEmail").value;
+        console.log(email);
+        document.getElementById("newsletterEmail").value=null;
+      }
+      function newDesigner(){
+        newDesigner=document.getElementById("newDesigner").value;
+        console.log(newDesigner);
+        document.getElementById("newDesigner").value=null;
+      }
+    </script>
+    
   </head>
 
   <body>
@@ -41,10 +54,10 @@
 
     <!--INTRODUCTION-->
       <div class="container-fluid text-light bg-dark p-5 text-center">
-        <h2>INTRODUCTION</h2>
-        <p>
-          Fashion designers not only reflect an era's culture but help shape it, too. From Coco Chanel (and her famous little black dress) to Calvin Klein, Alexander McQueen, Tommy Hilfiger and Donatella and Gianni Versace, fashion designers give us the freedom to express ourselves through clothing and accessories. 
-        </p>
+        <h2 class="p-2">INTRODUCTION</h2>
+        <p>A fashion designer is responsible for creating the specific look of individual garments-including a garment's shape, color, fabric, trimmings, and other aspects of the whole. The fashion designer begins with an idea of how a garment should look, turns that idea into a design (such as a sketch), and specifies how that design should be made into an actual piece of clothing by other workers (from patternmakers to finishers). The category of fashion designer includes people at different levels of the fashion business, from well-known couturiers, to anonymous designers working for commercial ready-to-wear houses, to stylists who might make only small modifications in existing designs. Fashion designers hold a special place in the world. Their talent and vision not only play a major role in how people look, but they have also made important contributions to the cultural and social environment.</p>
+        <a href="https://fashion-history.lovetoknow.com/fashion-clothing-industry/what-is-fashion-designer" class="btn btn-outline-light btn-md">Quoted from LovetoKnow</a>
+
       </div>
 
     <!--CHRISTIAN DIOR-->
@@ -91,7 +104,7 @@
                 </div>
               </div>
               <div class="col">
-                <h2 class="text-dark text-center p-3">THEIR INFLUENCE</h2>
+                <h2 class="text-dark text-center p-3">DIOR'S INFLUENCE</h2>
                 <div class="accordion" id="CDiorAccordion">
                   <div class="accordion-item">
                     <h2 class="accordion-header" id="CDiorA1">
@@ -214,7 +227,7 @@
                 </div>
               </div>
               <div class="col">
-                <h2 class="text-dark text-center p-3">THEIR INFLUENCE</h2>
+                <h2 class="text-dark text-center p-3">CHANEL'S INFLUENCE</h2>
                 <div class="accordion" id="CChanelAccordion">
                   <div class="accordion-item">
                     <h2 class="accordion-header" id="CChanelA1">
@@ -324,13 +337,14 @@
         <div class="row">
           <div class="col-sm-12 p-4">
             <h2>Would you like to stay updated?</h2>
-            <h5>Enter your email below to sign up for our newsletter and be notified when a new desiger is added.</h5>
-            <div class="container-fluid text-center input-group mb-3 d-flex justify-content-center align-content-center">
-              <input type="text" class="form-control input-box" placeholder="Email" aria-label="Email" aria-describedby="basic-addon2">
+            <h5>Enter your email below to sign up for our newsletter and be notified when new desigers are added.</h5>
+            <div class="container-fluid text-center input-group mb-3 d-flex justify-content-center align-content-center p-5">
+              <input type="text" class="form-control input-box" placeholder="Email" aria-label="Email" aria-describedby="basic-addon2" id="newsletterEmail">
               <div class="input-group-append text-center">
-                <button class="btn btn-outline-light text-center" type="button">Subscribe</button>
+                <button onclick="newsletter()" class="btn btn-outline-light text-center" type="button">Subscribe</button>
               </div>
             </div>
+            <p>(Your input will be displayed in the console)</p>
           </div>
         </div>
       </div>
@@ -344,11 +358,12 @@
             <h2>Missing someone?</h2>
             <h5>Let us know below and we'll do our best to add them!</h5>
             <div class="container-fluid text-center input-group mb-3 d-flex justify-content-center align-content-center p-5">
-              <input type="text" class="form-control input-box" placeholder="Designer name" aria-label="Designer name" aria-describedby="basic-addon2">
+              <input type="text" class="form-control input-box" placeholder="Designer name" aria-label="Designer name" aria-describedby="basic-addon2" id="newDesigner">
               <div class="input-group-append text-center">
-                <button class="btn btn-outline-dark text-center" type="button">Submit</button>
+                <button onclick="newDesigner()" class="btn btn-outline-dark text-center" type="button">Submit</button>
               </div>
             </div>
+            <p>(Your input will be displayed in the console)</p>
           </div>
         </div>
       </div>
@@ -364,4 +379,5 @@
     
     <!--BOOTSTRAP JAVASCRIPT TAG-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>  </body>
-</html>
+
+  </html>
