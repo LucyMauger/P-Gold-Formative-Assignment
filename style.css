@@ -47,6 +47,7 @@ h1{
 }
 .video-formatting{
     min-height: 315px;
+    max-width: 500px;
 }
 .input-box{
     max-width: 300px;
