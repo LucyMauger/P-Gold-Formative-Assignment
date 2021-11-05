@@ -7,8 +7,7 @@ body{
     background-image: 
         linear-gradient(
           rgba(0, 0, 0, 0.5),
-          rgba(0, 0, 0, 0.5)
-        ),
+          rgba(0, 0, 0, 0.5)),
         url(https://i.pinimg.com/originals/87/fa/80/87fa80bff6210727841d27eba5023eab.jpg);
     min-height: 700px;
     background-repeat: no-repeat;
